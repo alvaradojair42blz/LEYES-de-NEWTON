@@ -108,3 +108,14 @@ footer {
     border: 1px solid var(--border);
     opacity: 0.9; /* Un toque sutil para el modo oscuro */
 }
+.img-ley {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 12px;
+    border: 2px solid var(--accent); /* Tu color morado/neón */
+    filter: invert(0.9) hue-rotate(180deg); /* Opcional: esto invierte los colores para que el fondo sea oscuro, pruébalo si te gusta el efecto */
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.3); /* Brillo sutil */
+}
