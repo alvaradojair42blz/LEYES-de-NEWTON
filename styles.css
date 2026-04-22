@@ -99,3 +99,12 @@ footer {
     color: var(--accent); /* Esto pondrá los títulos en púrpura */
     margin-right: 5px;
 }
+.img-ley {
+    display: block;
+    max-width: 100%; /* Se ajusta al ancho de la tarjeta */
+    height: auto;
+    margin: 25px auto; /* Centrada y con espacio arriba/abajo */
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    opacity: 0.9; /* Un toque sutil para el modo oscuro */
+}
