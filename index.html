@@ -36,7 +36,11 @@
 
 </p>
 indica que un objeto no cambia su estado de movimiento por sí mismo. Si está en reposo, permanecerá en reposo; si se mueve en línea recta con velocidad constante, continuará así, salvo que una fuerza externa lo modifique. La inercia es la propiedad de los cuerpos de resistirse a cambios en su movimiento, y la masa cuantifica esta resistencia: a mayor masa, mayor inercia.            </p>
-            <img src="Ley1.webp" alt="Primera Ley" class="img-ley">
+         <br>
+         <hr> 
+          
+<p><strong>1. Primera Ley (Inercia):</strong> Se observa en los sistemas de seguridad automotriz. Los <strong>cinturones de seguridad</strong> y las bolsas de aire existen porque, ante un choque, tu cuerpo tiende a mantener su velocidad inicial debido a la inercia.</p>
+<img src="Ley1.webp" alt="Primera Ley" class="img-ley">
                 <div id="objeto"></div>
             </div>
             <button onclick="moverObjeto()">⚡ Aplicar fuerza</button>
@@ -51,45 +55,56 @@ indica que un objeto no cambia su estado de movimiento por sí mismo. Si está e
             </p>
             <p>
 "Esta ley define la relación exacta entre fuerza y movimiento. Establece que la aceleración de un cuerpo es directamente proporcional a la fuerza neta aplicada e inversamente proporcional a su masa inercial. Es una ecuación vectorial, lo que significa que la aceleración siempre tendrá la misma dirección y sentido que la fuerza resultante. En el Sistema Internacional, la unidad de fuerza es el Newton (N), definido como MASA { m,kg} y w ACELERACION  {a,m/s}"            </p>
-            <img src="Ley2.jpg" alt=" Segunda Ley" class="img-ley">
-<div class="input-group">
-                <input type="number" id="masa" placeholder="Masa (kg)" min="0">
-                <input type="number" id="aceleracion" placeholder="Aceleración (m/s²)">
-            </div>
-            <button onclick="calcularFuerza()">Calcular fuerza</button>
-            <p id="resultado"></p>
+            <br>
+            <hr>
+                    <p><strong>2. Segunda Ley (Masa):</strong> Es la base de la <strong>balística y el transporte</strong>. Al diseñar un elevador, un ingeniero usa F=m*a para calcular la potencia necesaria del motor según la carga máxima de personas que debe acelerar verticalmente.</p>
+
+        
+<img src="Ley2.jpg" alt=" Segunda Ley" class="img-ley">
+<div class="calculadora-newton">
+    <h3>Calculadora de Fuerza</h3>
+    <input type="number" id="masa" placeholder="Masa (kg)">
+    <input type="number" id="aceleracion" placeholder="Aceleración (m/s²)">
+    <button onclick="ejecutarCalculo()">Calcular</button>
+    <p id="resultado">Fuerza = ?</p>
+</div>
         </section>
 
-        <section class="reveal">
-            <div class="section-num">04</div>
-            <h2>Tercera Ley <span class="tag">Acción y Reacción</span></h2>
-            <p>
-            <p> 
-               <strong>Tercera ley de Newton o Principio de Acción y Reacción:</strong> 
-            </p>
-"Establece que las fuerzas siempre ocurren en pares. Si el cuerpo A ejerce una fuerza sobre el cuerpo B (acción), el cuerpo B ejerce simultáneamente una fuerza de igual magnitud y dirección, pero en sentido opuesto, sobre el cuerpo A (reacción). Es fundamental comprender que estas fuerzas actúan sobre objetos diferentes, por lo cual nunca se anulan entre sí dentro del sistema global de interacción."            </p>
-        <img src="Ley3.jpg" alt="Tercera Ley" class="img-ley">   
-<button onclick="accionReaccion()">▶ Simular</button>
-            <div id="reaccion-container" class="reaccion-hidden">
-                <div class="fuerza fuerza-a">→ Acción</div>
-                <div class="fuerza fuerza-b">← Reacción</div>
-            </div>
-            <p id="reaccion-texto" style="margin-top: 10px; color: var(--accent2); font-weight: 600;"></p>
+       <section class="reveal">
+    <div class="section-num">04</div>
+    <h2>Tercera Ley <span class="tag">Acción y Reacción</span></h2>
+    <p>
+        <strong>Tercera ley de Newton o Principio de Acción y Reacción:</strong>
+    </p>
+    <p>
+        "Establece que las fuerzas siempre ocurren en pares. Si el cuerpo A ejerce una fuerza sobre el cuerpo B (acción), el cuerpo B ejerce simultáneamente una fuerza de igual magnitud y dirección, pero en sentido opuesto, sobre el cuerpo A (reacción)."
+    </p>
+    <br>
+    <hr>
+    <p><strong>3. Tercera Ley (Acción/Reacción):</strong> Crucial en la exploración espacial y sistemas de colisión.</p>
+
+ <div id="canvas-container" class="demo-area" style="height: 250px; padding: 0; overflow: hidden; position: relative; background: #080808; border: 2px solid var(--accent);">
+        <div id="pelota1" class="bola-fisica" style="background: var(--accent);"></div>
+        <div id="pelota2" class="bola-fisica" style="background: var(--accent2);"></div>
+    </div>
+    <img src="Ley3.jpg" alt="Tercera Ley" class="img-ley">
+
+    <button onclick="accionReaccion()">▶ Activar Colisiones</button>
+    <p id="reaccion-texto" style="margin-top: 10px; color: var(--accent2); font-weight: 600;"></p>
+</section>
        
         </section>
         <section class="reveal">
     <div class="section-num">05</div>
     <h2>Conclusión: Las Leyes en el Mundo Real</h2>
     <p>
-        Las leyes de Newton no son solo abstracciones matemáticas; son las reglas que rigen nuestro entorno físico y digital. Su comprensión es vital para el desarrollo tecnológico:
+        Las leyes de Newton no son solo abstracciones matemáticas; son las reglas que rigen nuestro entorno físico y digital. Su comprensión es vital para el desarrollo tecnológico.
     </p>
+
     
     <div style="margin-top: 20px;">
-        <p><strong>1. Primera Ley (Inercia):</strong> Se observa en los sistemas de seguridad automotriz. Los <strong>cinturones de seguridad</strong> y las bolsas de aire existen porque, ante un choque, tu cuerpo tiende a mantener su velocidad inicial debido a la inercia.</p>
         
-        <p><strong>2. Segunda Ley (Dinámica):</strong> Es la base de la <strong>balística y el transporte</strong>. Al diseñar un elevador, un ingeniero usa F=m*a para calcular la potencia necesaria del motor según la carga máxima de personas que debe acelerar verticalmente.</p>
         
-        <p><strong>3. Tercera Ley (Acción/Reacción):</strong> Crucial en la <strong>exploración espacial</strong>. Un cohete se desplaza hacia arriba no porque "empuje el suelo", sino porque expulsa gases hacia abajo con gran fuerza; la reacción de esos gases impulsa al cohete en sentido opuesto.</p>
     </div>
 
     <p style="margin-top: 20px; border-left: 3px solid var(--accent); padding-left: 15px; font-style: italic;">
@@ -110,8 +125,23 @@ indica que un objeto no cambia su estado de movimiento por sí mismo. Si está e
             </div>
         </section>
 
+ <section class="reveal">
+    <div class="section-num">07</div>
+    <h2>Newton Challenge <span class="tag">Quiz</span></h2>
+    <p>Pon a prueba tus conocimientos sobre las leyes de la física:</p>
+    
+    <div id="quiz-container" class="calculadora-newton">
+        <h3 id="pregunta-texto" style="margin-bottom: 20px;">Cargando pregunta...</h3>
+        <div id="opciones-container" style="display: grid; gap: 10px;">
+            </div>
+        <p id="feedback-quiz" style="margin-top: 15px; font-weight: bold;"></p>
+    </div>
+</section>
+
+
+
         <section class="reveal">
-            <div class="section-num">07</div>
+            <div class="section-num">08</div>
             <h2>Bibliografía y Referencias</h2>
             <ul class="biblio-list">
                 <li><strong>Serway, R. A., & Jewett, J. W. (2018).</strong> <em>Física para ciencias e ingeniería</em>. Cengage Learning.</li>
@@ -120,6 +150,7 @@ indica que un objeto no cambia su estado de movimiento por sí mismo. Si está e
             </ul>
         </section>
     </main>
+   
 
    <footer>
     <div class="footer-content">
